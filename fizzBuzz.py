@@ -16,13 +16,12 @@ def fizzBuzz(upTo = 1):
     for i in range(1, upTo + 1):
         if (i % 3 == 0 and i % 5 == 0):
             array.append('FizzBuzz')
-        elif (i % 3 == 0 or i % 3 == 0):
-            if (i % 3 == 0):
-                array.append('Fizz')
-            else: 
-                array.append('Buzz')
-        elif(i % 3 != 0 and i % 5 != 0):
-                array.append(i)
+        elif (i % 3 == 0):
+            array.append('Fizz')
+        elif (i % 5 == 0): 
+            array.append('Buzz')
+        else:
+            array.append(i)
     return array
 
 print(fizzBuzz(35))
